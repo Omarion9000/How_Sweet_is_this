@@ -1,0 +1,174 @@
+/* styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+/* menu styles */
+header {
+    background-color: #333; /* background menu color */
+    position: fixed; /* menu position */
+    width: 100%;
+    z-index: 100; 
+}
+.brand-logo img {
+    height: 500px; 
+    margin-left: 0%; 
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left; 
+}
+
+header nav ul li a {
+    display: block;
+    color: white; /* menu color text */
+    text-align: center;
+    padding: 14px 20px; /* space between text*/
+    text-decoration: none; 
+}
+
+
+header nav ul li a:hover {
+    background-color: #111;
+}
+
+nav ul li a {
+    font-family: 'Pacifico', cursive;
+}
+
+
+
+main {
+    padding-top: 110px; 
+}
+
+/* styles of the varieties */
+.variety {
+    margin-bottom: 20px; 
+    text-align: center; /* images and text to the center */
+    font-family: 'Edu NSW ACT Foundation', sans-serif;
+}
+
+/* video style */
+.video-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proportion 16:9 */
+}
+
+/* video style in the container */
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed,
+.video-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#history img {
+    max-width: 80%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.variety img {
+    width: 100%; 
+    max-width: 300px; /* Max width */
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.variety p {
+    margin: 0 auto;
+    max-width: 300px; 
+}
+input[type="text"], input[type="email"] {
+    width: 80%; /* Width of the field */
+    padding: 10px; /* Padding inside to keep text from touching the edges */
+    margin: 10px 0; /* Margin to separate the fields from each other */
+    border: 2px solid #a90a0a; /* Solid border with a soft color */
+    border-radius: 5px; /* Rounded corners to soften the appearance */
+    box-sizing: border-box; /* Ensures padding and border do not increase the field's total width */
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #3498db; /* Changes the border color on focus */
+    outline: none; /* Removes the default outline some browsers add */
+}
+
+button[type="submit"] {
+    width: 84%; /* Button width, slightly wider than the fields to account for padding */
+    padding: 10px;
+    background-color: #054d7e; /* Background color of the button */
+    color: #ffffff; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes the cursor to a hand on hover to indicate it's clickable */
+    transition: background-color 0.3s; /* transition for background color change */
+}
+
+button[type="submit"]:hover {
+    background-color: #2874a6; /* Darkens the button on hover */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul li {
+        float: none; /* Stack the nav items vertically on smaller screens */
+    }
+
+    input[type="text"], input[type="email"], button[type="submit"] {
+        width: 90%; /* Increase width for smaller screens for better visibility */
+    }
+
+    .variety img, .variety p {
+        max-width: 90%; /* Adjust sizes for smaller devices */
+    }
+
+    #history img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        padding: 0; /* Adjust padding and other styles as needed */
+    }
+
+    header nav ul li a {
+        padding: 10px 15px; /* Adjust the padding to better fit smaller screens */
+    }
+
+    .variety, .variety img, .variety p {
+        max-width: 100%; /* Use the full width on very small devices */
+    }
+
+    input[type="text"], input[type="email"], button[type="submit"] {
+        width: 100%; /* Full width for form elements on very small screens */
+    }
+}
+.fa-twitter {
+    color: #1DA1F2; /* Color oficial de Twitter */
+}
+
+.fa-instagram {
+    color: #E4405F; /* Color oficial de Instagram */
+}
+
+
